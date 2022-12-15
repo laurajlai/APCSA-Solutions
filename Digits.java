@@ -31,7 +31,7 @@ public class Digits
         //loop through the ArrayList containing the digits
         for (int i = 0; i < size - 1; i++)
         {
-            if (digitList.get(i)/*.intValue()*/ >= digitList.get(i+1)/*.intValue()*/) //intValue() is no longer necessary due to autoboxing, so it's commented out 
+            if (digitList.get(i) >= digitList.get(i+1)) //don't need intValue() thanks to autoboxing 
             {
                 return false;
             }
